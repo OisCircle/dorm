@@ -1,0 +1,60 @@
+#application.properties默认编码是ascii，idea默认是utf-8
+#所以用properties使用中文会出现乱码，需要更改，有点麻烦
+
+#空格必须有 k: v
+server:
+  port: 8080
+#项目访问路径:localhost:8080/demo/...
+#servlet:
+#   context-path: /demo
+#开启debug模式，启动应用的时候可以查看很多信息
+#debug: true
+
+person:
+  name: 张三${random.uuid}
+  age: ${random.int(1,100)}
+  alive: true
+  birthDate: 2011/01/12
+  map: {k1: v1,k2: v2}
+  list:
+    - list1
+    - list2
+    - list3
+  dog:
+    name: 小狗狗
+    age: 2
+#默认级别是info，设置指定目录下面的日志级别
+logging:
+  level:
+    #可以配置多个目录下面的不同日志输出级别
+    com.qcq: trace
+  #在相对目录的根目录下面创建
+  #path: /springLog
+  #在项目的根路径下面创建日志文件
+  #file: myyyylog.log
+
+#myabtis
+#mybatis:
+#  type-aliases-package: com.qcq.dorm.entity
+#  mapper-locations: classpath:mapper/**/*.xml
+#mybatis-plus
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.qcq.dorm.entity
+spring:
+#数据库连接配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.162.211:3306/dorm?useSSL=false&amp;autoReconnect=true&amp;serverTimezone=GMT%2B8&amp;characterEncoding=UTF-8
+    username: root
+    password: qq793414670
+#国际化
+  messages:
+    basename: internationalization.login
+#开发的时候最好先关闭缓存，修改页面的时候，CTRL+F9重新编译页面，就不需要重启服务器了
+  thymeleaf:
+    cache: false
+  #修改默认的日期格式，默认的是yyyy/MM/dd
+  mvc:
+    date-format: yyyy-MM-dd

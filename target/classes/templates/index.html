@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+<script description="text/javascript">
+    function send() {
+        location.href = "/admin";
+    }
+    function addUser() {
+        $.ajax({
+            type: "post",
+            url: "/admin/addUser",
+            // contentType: "application/json",
+            dataType: "json",
+            async: false,
+            data: {
+                "username": "张三"
+            },
+            success: function (data) {
+                alert(data.message)
+                alert(data.data[0][0].username)
+                alert(data.data[1][1].username)
+            },
+            error: function () {
+                alert("error...")
+            }
+
+        });
+    }
+
+
+    function cat() {
+        $.ajax({
+            type: "post",
+            url: "/cat",
+            // contentType: "application/json",
+            dataType: "json",
+            async: false,
+            data: {
+                "name": "kitty",
+                "age": -1
+            },
+            success: function (data) {
+                alert(data)
+                alert(data.code)
+                alert(data.message)
+                alert(data.data)
+            },
+            error: function () {
+                alert("error...")
+            }
+
+        });
+    }
+
+</script>
+<body>
+<span shiro:authenticated="true">
+      <span>欢迎您：<span th:text="${session.user.getUsername()}"></span></span>
+</span>
+<br>
+<span shiro:hasRole="admin">
+    <span th:text="您拥有admin角色"></span>
+    <br>
+    <button id="addUser" onclick="addUser()" onload="addUser()">addUser</button>
+</span>
+<br>
+<span shiro:hasPermission="user:*"><span th:text="您拥有对user资源的所有操作"></span></span>
+<h1 th:text="${session.user}"></h1>
+
+<button onclick="send()" description="submit">to admin</button>
+<button onclick="cat()">to cat validation</button>
+
+</body>
+</html>

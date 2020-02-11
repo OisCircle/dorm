@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<!--引用本地的jquery包-->
+<script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+<script description="text/javascript">
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        $.ajax({
+            type: "post",
+            url: "/loginByPost",
+            dataType: "json",
+            async: false,
+            data: {
+                "username": username,
+                "password": password
+            },
+            success: function (data) {
+                if (data == 1)
+                    location.href = "/index"
+            },
+            error: function () {
+                alert("error...")
+            }
+
+        })
+
+    }
+
+    function send() {
+
+        $.ajax({
+
+            type: "put",
+            url: "/user",
+            <!--dataType: "json",-->
+            <!--如果指定json会报错-->
+            async: false,
+            data: {
+                "name": "doggy",
+                "age" : 12,
+                "cat.name":"catty",
+                "cat.age":2
+            },
+            success: function (data) {
+                alert(data)
+            },
+            error: function () {
+                alert("error...")
+            }
+
+        })
+
+    }
+
+</script>
+<body>
+<input id="username" type="text">
+<input id="password" type="text">
+<button onclick="login()" description="submit">post login</button>
+<br>
+<br>
+
+<button onclick="send()" description="submit">send</button>
+</body>
+
+<br>
+<br>
+<br>
+<h1 th:text="${a.getName()}"></h1>
+</html>
