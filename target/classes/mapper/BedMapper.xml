@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qcq.dorm.mapper.BedMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qcq.dorm.entity.Bed">
+        <id column="id" property="id" />
+        <result column="dorm_id" property="dormId" />
+        <result column="number" property="number" />
+        <result column="is_selected" property="isSelected" />
+        <result column="is_move_in" property="isMoveIn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, dorm_id AS dormId, number, is_selected AS isSelected, is_move_in AS isMoveIn
+    </sql>
+
+</mapper>
