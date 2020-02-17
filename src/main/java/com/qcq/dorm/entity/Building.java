@@ -20,6 +20,7 @@ import lombok.experimental.Accessors;
  * @since 2020-02-17
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 public class Building extends Model<Building> {
 

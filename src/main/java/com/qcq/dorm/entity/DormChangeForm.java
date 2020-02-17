@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
+
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.annotations.Version;
@@ -24,6 +25,7 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 @TableName("dorm_change_form")
+@EqualsAndHashCode(callSuper = true)
 public class DormChangeForm extends Model<DormChangeForm> {
 
     private static final long serialVersionUID = 1L;
@@ -58,9 +60,9 @@ public class DormChangeForm extends Model<DormChangeForm> {
     private String reason;
     /**
      * 状态
-0-已提交
-1-通过
-2-拒绝
+     * 0-已提交
+     * 1-通过
+     * 2-拒绝
      */
     private Integer state;
 

@@ -22,6 +22,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
+@EqualsAndHashCode(callSuper = true)
 public class Dorm extends Model<Dorm> {
 
     private static final long serialVersionUID = 1L;

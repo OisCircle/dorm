@@ -22,6 +22,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
+@EqualsAndHashCode(callSuper = true)
 public class Item extends Model<Item> {
 
     private static final long serialVersionUID = 1L;
@@ -44,7 +45,7 @@ public class Item extends Model<Item> {
      * 是否损坏
      */
     @TableField("is_broken")
-    private Integer isBroken;
+    private Boolean isBroken;
 
 
     @Override

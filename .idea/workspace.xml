@@ -2,23 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7edffffb-3b97-4391-889b-09f959d13aec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/util/MpGeneratorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/CustomizeThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/LoginResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/AbstractCacheSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheCounted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/schedule/LogSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dorm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dorm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/MyContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/MyLocaleResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/config/MyAppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/responseStandar/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/responseStandar/ResponseMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/internationalization/login.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/internationalization/login_en_US.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/internationalization/login_zh_CN.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/MyContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/MyLocaleResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/config/MyAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/responseStandar/ResponseCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/responseStandar/ResponseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormOfficerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormOfficerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Bed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Bed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Building.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Dorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Dorm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormChangeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormChangeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormOfficer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormOfficer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/FixForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/FixForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/response/ResponseCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/response/ResponseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/util/MpGeneratorUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,44 +74,89 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/util/MpGeneratorUtil.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="116">
+              <caret line="68" column="50" lean-forward="true" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2182#2549#0" expanded="true" />
-                <element signature="e#2548#2549#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/DormApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="-37">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/mapper/BedMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29.jar!/javax/servlet/http/HttpSession.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="34">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding>
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Husband.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#595#625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-199">
+              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -79,6 +167,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -91,6 +180,8 @@
       <find>113.82.236.20</find>
       <find>wecheck</find>
       <find>we-check</find>
+      <find>lombok</find>
+      <find>com.qcq.core.redis.RedisCacheSupport</find>
     </findStrings>
     <replaceStrings>
       <replace>dorm</replace>
@@ -117,13 +208,34 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/authc/Test.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/ShiroTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/BirdTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/responseStandar/ResponseMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/Response2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/util/MpGeneratorUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/CustomizeThreadPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/CommonResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/schedule/LogSchedule.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/UserEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/UserEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/LoginResultDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/OnlineSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java" />
       </list>
     </option>
   </component>
@@ -148,6 +260,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +302,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,7 +320,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
@@ -206,7 +329,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="schedule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
@@ -264,8 +405,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +416,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper/authc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -288,11 +427,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qcq.dorm.schedule" />
+      <recent name="com.qcq.dorm.response" />
+      <recent name="com.qcq.dorm.bean" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\java\com\qcq\dorm\redis" />
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\java\com\qcq\dorm" />
       <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\mapper\authc" />
       <recent name="C:\Users\oisci\IdeaProjects\dorm" />
     </key>
@@ -326,10 +473,15 @@
     <configuration name="SpringBootDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dorm" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qcq.dorm.DormApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MpGeneratorUtil" />
+      <item itemvalue="Spring Boot.SpringBootDemoApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MpGeneratorUtil" />
@@ -353,12 +505,14 @@
       <workItem from="1581417120636" duration="1892000" />
       <workItem from="1581760723539" duration="2453000" />
       <workItem from="1581846435154" duration="2019000" />
-      <workItem from="1581914659237" duration="1226000" />
+      <workItem from="1581914659237" duration="3917000" />
+      <workItem from="1581921291471" duration="443000" />
+      <workItem from="1581921757393" duration="14570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17192000" />
+    <option name="totallyTimeSpent" value="34896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -371,8 +525,8 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37637362" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51236266" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4642857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -382,7 +536,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.41895604" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -397,101 +551,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((StandardSession)((StandardSessionFacade)session).session).manager" custom="org.apache.catalina.session.StandardSessionFacade,org.apache.catalina.session.StandardSession" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/RolePermission.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Department.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/RoleService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/HelloServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/PermissionService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/authc/RoleMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/authc/UserRoleMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/authc/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/authc/PermissionMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/DaoTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/HttpTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/ShiroTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/DormApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emp/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/CatController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/AdminController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bird.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/constant/Constant.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/config/ShiroConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Husband.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar!/org/springframework/ui/Model.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/dorm/BirdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="84" column="54" lean-forward="true" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/authc/Test.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -561,27 +628,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseMessage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BedMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/mapper/BedMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -597,10 +648,240 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/ResponseCode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotEmpty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotNull.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/mapper/BedMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BedMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bird.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/DormApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0-sources.jar!/com/baomidou/mybatisplus/service/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheCounted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/AbstractCacheSupport.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/schedule/LogSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Husband.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/LoginResultDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/CommonResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#595#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/CustomizeThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="68" column="50" lean-forward="true" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,6 +924,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -654,6 +936,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>dorm</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

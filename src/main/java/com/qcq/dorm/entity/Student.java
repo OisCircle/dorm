@@ -20,6 +20,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
+@EqualsAndHashCode(callSuper = true)
 public class Student extends Model<Student> {
 
     private static final long serialVersionUID = 1L;
@@ -36,12 +37,12 @@ public class Student extends Model<Student> {
      * 是否抽烟
      */
     @TableField("is_smoke")
-    private Integer isSmoke;
+    private Boolean isSmoke;
     /**
      * 是否早睡
      */
     @TableField("is_early_sleep")
-    private Integer isEarlySleep;
+    private Boolean isEarlySleep;
     /**
      * 兴趣爱好
      */

@@ -1,16 +1,14 @@
 package com.qcq.dorm.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
-import java.io.Serializable;
-
-import com.baomidou.mybatisplus.annotations.Version;
-
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -22,6 +20,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
+@EqualsAndHashCode(callSuper = true)
 public class Bed extends Model<Bed> {
 
     private static final long serialVersionUID = 1L;
@@ -41,12 +40,12 @@ public class Bed extends Model<Bed> {
      * 是否被选择
      */
     @TableField("is_selected")
-    private Integer isSelected;
+    private Boolean isSelected;
     /**
      * 是否入住
      */
     @TableField("is_move_in")
-    private Integer isMoveIn;
+    private Boolean isMoveIn;
 
 
     @Override
