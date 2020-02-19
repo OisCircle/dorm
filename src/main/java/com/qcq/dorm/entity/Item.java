@@ -45,7 +45,7 @@ public class Item extends Model<Item> {
      * 是否损坏
      */
     @TableField("is_broken")
-    private Boolean isBroken;
+    private Integer isBroken;
 
 
     @Override

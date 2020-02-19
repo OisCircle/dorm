@@ -101,9 +101,13 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:jquery:3.3.1-1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:popper.js:1.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:bootstrap-switch:3.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:Eonasdan-bootstrap-datetimepicker:4.17.47" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:momentjs:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:font-awesome:4.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:3.3.1-1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring5:3.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf:3.0.9.RELEASE" level="project" />

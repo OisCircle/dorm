@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+
+    <link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="asserts/css/login.css">
+
+</head>
+<body>
+<div class="container-fluid" style="width:100%; height:100%; top:0; left:0; position:absolute; background:#D1FFFD;">
+    <form class="form-horizontal">
+        <span class="heading">宿管注册</span>
+        <div class="form-group">
+            <input type="text" id="loginId" class="form-control" placeholder="工号">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="form-group help">
+            <input type="password" id="loginPassword" class="form-control" placeholder="密码">
+            <i class="fa fa-lock"></i>
+            <a href="#" class="fa fa-question-circle"></a>
+        </div>
+        <div class="form-group help">
+            <input type="password" id="loginPassword2" class="form-control" placeholder="再次确认密码">
+            <i class="fa fa-lock"></i>
+            <a href="#" class="fa fa-question-circle"></a>
+        </div>
+        <div class="buildingId" th:each="building:${buildings}">
+            <label>
+                <input type="radio" name="buildingIds" th:text="${building.name}" th:id="${building.id}"
+                       th:value="${building.id}"/>
+            </label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button id="returnIndex" type="button" class="btn btn-default">返回主页</button>
+        <br>
+        <br>
+        <button id="gotoRegister" type="button" class="btn btn-default">注册</button>
+        <br>
+        <p id="warningText" style="position:absolute; left:50%; transform:translateX(-50%); text-align:center;"></p>
+    </form>
+</div>
+
+
+<script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+<script>
+    $('#gotoRegister').click(function () {
+            if ($('#loginPassword').val() == $('#loginPassword2').val()) {
+                var buildingIds = document.getElementsByName("buildingIds");
+                let bid;
+                for (i = 0; i < buildingIds.length; i++) {
+                    if (buildingIds[i].checked) {
+                        bid = buildingIds[i].value
+                    }
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/dormOfficer/register',
+                    dataType: 'json',
+                    data: {
+                        'id': $('#loginId').val(),
+                        'password': $('#loginPassword').val(),
+                        'buildingId': bid
+                    },
+                    success: function (result) {
+                        if (result.code == 200) {
+                            alert('注册成功，请登陆');
+                            window.location.href = "/index"
+                        } else {
+                            $('#warningText').text(result.message);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            } else {
+                $('#warningText').text('输入的密码不一致');
+            }
+
+        }
+    );
+    $('#returnIndex').click(function () {
+        window.location.href = "/index"
+    });
+</script>
+
+</body>
+</html>

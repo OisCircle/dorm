@@ -40,12 +40,12 @@ public class Bed extends Model<Bed> {
      * 是否被选择
      */
     @TableField("is_selected")
-    private Boolean isSelected;
+    private Integer isSelected;
     /**
      * 是否入住
      */
     @TableField("is_move_in")
-    private Boolean isMoveIn;
+    private Integer isMoveIn;
 
 
     @Override

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+
+    <link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="asserts/css/login.css">
+
+</head>
+<body>
+<div class="container-fluid" style="width:100%; height:100%; top:0; left:0; position:absolute; background:#D1FFFD;">
+    <form class="form-horizontal">
+        <span class="heading">学生注册</span>
+        <div class="form-group">
+            <input type="text" id="loginId" class="form-control" placeholder="学号">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="form-group help">
+            <input type="password" id="loginPassword" class="form-control" placeholder="密码">
+            <i class="fa fa-lock"></i>
+            <a href="#" class="fa fa-question-circle"></a>
+        </div>
+        <div class="form-group help">
+            <input type="password" id="loginPassword2" class="form-control" placeholder="再次确认密码">
+            <i class="fa fa-lock"></i>
+            <a href="#" class="fa fa-question-circle"></a>
+        </div>
+        <div class="form-group">
+            <input type="text" id="habit" class="form-control" placeholder="兴趣爱好">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="isSmoke" class="form-control" placeholder="是否抽烟">是否抽烟
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="isEarlySleep" class="form-control" placeholder="是否早睡">是否早睡
+        </div>
+        <button id="returnIndex" type="button" class="btn btn-default">返回主页</button>
+        <br>
+        <br>
+        <button id="gotoRegister" type="button" class="btn btn-default">注册</button>
+        <p id="warningText" style="position:absolute; left:50%; transform:translateX(-50%); text-align:center;"></p>
+    </form>
+</div>
+
+
+<script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+<script>
+    $('#gotoRegister').click(function () {
+        if ($('#loginPassword').val() == $('#loginPassword2').val()) {
+            let isSmoke;
+            let isEarlySleep;
+            let habit = document.getElementById("habit").value;
+            if (document.getElementById("isSmoke").checked) {
+                isSmoke = 1;
+            } else {
+                isSmoke = 0;
+            }
+            if (document.getElementById("isEarlySleep").checked) {
+                isEarlySleep = 1;
+            } else {
+                isEarlySleep = 0;
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/student/register',
+                dataType: 'json',
+                data: {
+                    'id': $('#loginId').val(),
+                    'password': $('#loginPassword').val(),
+                    'isSmoke': isSmoke,
+                    'isEarlySleep': isEarlySleep,
+                    'habit': habit
+                },
+                success: function (result) {
+                    if (result.code == 200) {
+                        window.location.href = "/studentIndex" + "?id=" + $('#loginId').val()
+                    } else {
+                        $('#warningText').text(result.message);
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        } else {
+            $('#warningText').text('输入的密码不一致');
+        }
+    });
+    $('#returnIndex').click(function () {
+        window.location.href = "/index"
+    });
+</script>
+
+</body>
+</html>

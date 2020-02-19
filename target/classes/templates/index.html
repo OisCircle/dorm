@@ -1,78 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+
+    <link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="asserts/css/login.css">
+
 </head>
+<body>
+<div class="container-fluid" style="width:100%; height:100%; top:0; left:0; position:absolute; background:#D1FFFD;">
+    <form class="form-horizontal">
+        <span class="heading">宿舍管理系统登陆</span>
+        <div class="form-group">
+            <input type="text" id="loginId" class="form-control" placeholder="学号/工号">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="form-group help">
+            <input type="password" id="loginPassword" class="form-control" placeholder="密码">
+            <i class="fa fa-lock"></i>
+            <a href="#" class="fa fa-question-circle"></a>
+        </div>
+        <div class="form-group">
+            <button id="studentRegister" type="button" class="btn btn-default">学生注册</button>
+            <div class="main-checkbox">
+                <input type="checkbox" value="0" id="rememberMe" name="rememberMe"/>
+                <label for="rememberMe"></label>
+            </div>
+            <label for="rememberMe"><span class="text">记住我</span></label>
+            <br>
+            <button id="dormOfficerRegister" type="button" class="btn btn-default">宿管注册</button>
+            <div class="main-checkbox">
+                <input type="checkbox" value="0" id="isDormOfficer" name="isDormOfficer"/>
+                <label for="isDormOfficer"></label>
+            </div>
+            <label for="isDormOfficer"><span class="text">我是宿管</span></label>
+            <br>
+            <button id="gotoLogin" type="button" class="btn btn-default">登录</button>
+
+        </div>
+        <p id="warningText" style="position:absolute; left:50%; transform:translateX(-50%); text-align:center;"></p>
+    </form>
+</div>
+
+
 <script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
-<script description="text/javascript">
-    function send() {
-        location.href = "/admin";
-    }
-    function addUser() {
+<script>
+    $('#gotoLogin').click(function () {
+        // console.log($('#loginId').val()  + " - " + $('#loginPassword').val())
+        let isRemMe = 0;
+        if ($('#rememberMe').is(':checked')) {
+            isRemMe = 1
+        }
+        let isDormOfficer = 'dormOfficer';
+        if (!$('#isDormOfficer').is(':checked')) {
+            isDormOfficer = 'student'
+        }
         $.ajax({
-            type: "post",
-            url: "/admin/addUser",
-            // contentType: "application/json",
-            dataType: "json",
-            async: false,
+            type: 'POST',
+            url: '/' + isDormOfficer + '/login',
+            dataType: 'json',
+
             data: {
-                "username": "张三"
+                'id': $('#loginId').val(),
+                'password': $('#loginPassword').val(),
+                'rememberMe': isRemMe
             },
-            success: function (data) {
-                alert(data.message)
-                alert(data.data[0][0].username)
-                alert(data.data[1][1].username)
+            success: function (result) {
+                if (result.code == 200 && isDormOfficer == 'dormOfficer') {
+                    //跳转主页
+                    window.location.href = "/dormOfficerIndex" + "?id=" + $('#loginId').val()
+                } else if (result.code == 200 && isDormOfficer == 'student') {
+                    //跳转主页
+                    window.location.href = "/studentIndex" + "?id=" + $('#loginId').val()
+                } else {
+                    $('#warningText').text(result.message);
+                }
             },
             error: function () {
-                alert("error...")
+
             }
-
         });
-    }
-
-
-    function cat() {
-        $.ajax({
-            type: "post",
-            url: "/cat",
-            // contentType: "application/json",
-            dataType: "json",
-            async: false,
-            data: {
-                "name": "kitty",
-                "age": -1
-            },
-            success: function (data) {
-                alert(data)
-                alert(data.code)
-                alert(data.message)
-                alert(data.data)
-            },
-            error: function () {
-                alert("error...")
-            }
-
-        });
-    }
+    });
+    $('#studentRegister').click(function () {
+            window.location.href = "/studentRegister";
+        }
+    );
+    $('#dormOfficerRegister').click(function () {
+        window.location.href = "/dormOfficerRegister";
+    })
 
 </script>
-<body>
-<span shiro:authenticated="true">
-      <span>欢迎您：<span th:text="${session.user.getUsername()}"></span></span>
-</span>
-<br>
-<span shiro:hasRole="admin">
-    <span th:text="您拥有admin角色"></span>
-    <br>
-    <button id="addUser" onclick="addUser()" onload="addUser()">addUser</button>
-</span>
-<br>
-<span shiro:hasPermission="user:*"><span th:text="您拥有对user资源的所有操作"></span></span>
-<h1 th:text="${session.user}"></h1>
-
-<button onclick="send()" description="submit">to admin</button>
-<button onclick="cat()">to cat validation</button>
 
 </body>
 </html>

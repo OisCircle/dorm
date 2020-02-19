@@ -58,3 +58,7 @@ spring:
   #修改默认的日期格式，默认的是yyyy/MM/dd
   mvc:
     date-format: yyyy-MM-dd
+  jta:
+    bitronix:
+      datasource:
+        enable-jdbc4-connection-test: true
