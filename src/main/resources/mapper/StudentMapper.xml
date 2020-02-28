@@ -6,6 +6,7 @@
     <resultMap id="BaseResultMap" type="com.qcq.dorm.entity.Student">
         <id column="id" property="id" />
         <result column="password" property="password" />
+        <result column="name" property="name" />
         <result column="is_smoke" property="isSmoke" />
         <result column="is_early_sleep" property="isEarlySleep" />
         <result column="habit" property="habit" />
@@ -14,7 +15,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, password, is_smoke AS isSmoke, is_early_sleep AS isEarlySleep, habit, bed_id AS bedId
+        id, password, name, is_smoke AS isSmoke, is_early_sleep AS isEarlySleep, habit, bed_id AS bedId
     </sql>
 
 </mapper>

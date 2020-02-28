@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.annotations.Version;
@@ -44,6 +45,12 @@ public class Dorm extends Model<Dorm> {
     @TableField("clean_score")
     private Integer cleanScore;
 
+
+    /**
+     * 电费
+     */
+    @TableField("electricity_bill")
+    private Double electricityBill;
 
     @Override
     protected Serializable pkVal() {

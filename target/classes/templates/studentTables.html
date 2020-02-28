@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="asserts/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="asserts/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="asserts/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="asserts/img/favicon.png?3">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+<!-- navbar-->
+<header th:replace="navbar.html"></header>
+<div class="d-flex align-items-stretch">
+    <div id="sidebar" class="sidebar py-3 shrink show">
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">学生</div>
+        <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="/studentIndex?id=1" class="sidebar-link text-muted"><i
+                    class="o-home-1 mr-3 text-gray"></i><span>概览</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{studentTables(id=${student.id})}"
+                                             class="sidebar-link text-muted active"><i
+                    class="o-table-content-1 mr-3 text-gray"></i><span>宿舍详情</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{studentForms(id=${student.id})}"
+                                             class="sidebar-link text-muted"><i
+                    class="o-survey-1 mr-3 text-gray"></i><span>事务中心</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{chooseDorm(id=${student.id})}" class="sidebar-link text-muted"><i
+                    class="o-wireframe-1 mr-3 text-gray"></i><span>宿舍选择</span></a></li>
+            <li class="sidebar-list-item"><a onclick="logout()"
+                                             class="sidebar-link text-muted"><i
+                    class="o-exit-1 mr-3 text-gray"></i><span>退出系统</span></a></li>
+        </ul>
+    </div>
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div class="container-fluid px-xl-5">
+            <section class="py-5">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-uppercase mb-0">床位详情</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table card-text">
+                                    <thead>
+                                    <tr>
+                                        <th>床位号</th>
+                                        <th>是否已被选择</th>
+                                        <th>归属人</th>
+                                        <th>是否已入住</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="bed:${beds}">
+                                        <td th:text="${bed.number}"></td>
+                                        <td th:if="${bed.isSelected == true}">是</td>
+                                        <td th:if="${bed.isSelected == false}">否</td>
+                                        <td th:text="${bed.ownerName}"></td>
+                                        <td th:if="${bed.isMoveIn} == true">是</td>
+                                        <td th:if="${bed.isMoveIn} == false">否</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-uppercase mb-0">公共物品详情</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table card-text">
+                                    <thead>
+                                    <tr>
+                                        <th>物品名称</th>
+                                        <th>是否损坏</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="item:${items}">
+                                        <td th:text="${item.name}"></td>
+                                        <td th:if="${item.isBroken} == 1">是</td>
+                                        <td th:if="${item.isBroken} == 0">否</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-uppercase mb-0">维修单详情</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table card-text">
+                                    <thead>
+                                    <tr>
+                                        <th>物品名称</th>
+                                        <th>描述</th>
+                                        <th>状态</th>
+                                        <th>提交时间</th>
+                                        <th>完成时间</th>
+                                        <th>满意度(0~10)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="fixForm:${fixForms}">
+                                        <td th:text="${fixForm.itemName}"></td>
+                                        <td th:text="${fixForm.desc}"></td>
+                                        <td th:if="${fixForm.state} == 0">待维修</td>
+                                        <td th:if="${fixForm.state} == 1">维修中</td>
+                                        <td th:if="${fixForm.state} == 2">维修完成</td>
+                                        <td th:text="${#temporals.format(fixForm.submitTime, 'yyyy-MM-dd')}"></td>
+                                        <td th:text="${#temporals.format(fixForm.finishTime, 'yyyy-MM-dd')}"></td>
+                                        <td th:if="${fixForm.satisfactionTag} == 0">-</td>
+                                        <td th:id="'commentTd'+${fixForm.id}" th:if="${fixForm.satisfactionTag} == 1">
+                                            <form th:id="'commentForm'+${fixForm.id}" class="form-inline">
+                                                <div class="form-group">
+                                                    <input id="satisfaction" type="number" placeholder="1~10"
+                                                           class="mr-3 form-control">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="form-group">
+                                                    <input onclick="comment(this.id)" type="button"
+                                                           class="btn btn-green" value="评价"
+                                                           th:id="'commentBtn'+${fixForm.id}"
+                                                           th:fixFormId="${fixForm.id}">
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td th:if="${fixForm.satisfactionTag} == 2"
+                                            th:text="${fixForm.satisfaction}"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-uppercase mb-0">我的换宿申请表详情</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table card-text">
+                                    <thead>
+                                    <tr>
+                                        <th>原宿舍地址</th>
+                                        <th>新宿舍地址</th>
+                                        <th>原因</th>
+                                        <th>状态</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="form:${dormChangeForms}">
+                                        <td th:text="${form.oldLocation}"></td>
+                                        <td th:text="${form.newLocation}"></td>
+                                        <td th:text="${form.reason}"></td>
+                                        <td th:if="${form.state} == 0">待处理</td>
+                                        <td th:if="${form.state} == 1">已同意</td>
+                                        <td th:if="${form.state} == 2">已拒绝</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer th:replace="footer.html"></footer>
+    </div>
+</div>
+<!-- JavaScript files-->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="asserts/vendor/popper.js/umd/popper.min.js"></script>
+<script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
+<script src="asserts/vendor/jquery.cookie/jquery.cookie.js"></script>
+<script src="https://cdn.bootcss.com/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="asserts/js/js.cookie.min.js"></script>
+<script src="asserts/js/front.js"></script>
+<script th:inline="javascript">
+    function comment(id) {
+        let btn = document.getElementById(id);
+        let fixFormId = btn.getAttribute("fixFormId");
+        let satisfaction = document.getElementById("satisfaction").value;
+        if (satisfaction == null || satisfaction == '') {
+            alert("请输入评价");
+            return;
+        }
+        if (satisfaction > 10 || satisfaction < 0) {
+            alert("评价范围不正确");
+            return;
+        }
+        $.ajax({
+            type: 'PUT',
+            url: '/fixForm/update',
+            dataType: 'json',
+            data: {
+                'id': fixFormId,
+                'satisfaction': satisfaction
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    alert('操作成功！');
+                    window.location.href = "studentTables?id=" + [[${student.id}]];
+                } else {
+                    alert(result.message);
+                }
+            },
+            error: function () {
+                alert("系统错误");
+            }
+        });
+    }
+    function logout() {
+        $.ajax({
+            type: 'GET',
+            url: '/dormOfficer/logout',
+            dataType: 'json',
+            data: {
+                'id': [[${student.id}]]
+            },
+            success: function (result) {
+                window.location.href = "index";
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -6,9 +6,7 @@
     <resultMap id="BaseResultMap" type="com.qcq.dorm.entity.DormChangeForm">
         <id column="id" property="id" />
         <result column="student_id" property="studentId" />
-        <result column="old_dorm_id" property="oldDormId" />
         <result column="old_bed_id" property="oldBedId" />
-        <result column="new_dorm_id" property="newDormId" />
         <result column="new_bed_id" property="newBedId" />
         <result column="reason" property="reason" />
         <result column="state" property="state" />
@@ -16,7 +14,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, student_id AS studentId, old_dorm_id AS oldDormId, old_bed_id AS oldBedId, new_dorm_id AS newDormId, new_bed_id AS newBedId, reason, state
+        id, student_id AS studentId, old_bed_id AS oldBedId, new_bed_id AS newBedId, reason, state
     </sql>
 
 </mapper>

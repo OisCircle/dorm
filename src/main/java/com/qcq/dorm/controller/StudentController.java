@@ -3,20 +3,18 @@ package com.qcq.dorm.controller;
 
 import com.qcq.dorm.bean.LoginSession;
 import com.qcq.dorm.dto.LoginResultDTO;
-import com.qcq.dorm.entity.DormOfficer;
+import com.qcq.dorm.entity.Bed;
 import com.qcq.dorm.entity.Student;
 import com.qcq.dorm.enums.UserEnum;
 import com.qcq.dorm.response.CommonResult;
-import com.qcq.dorm.service.DormOfficerService;
+import com.qcq.dorm.service.BedService;
 import com.qcq.dorm.service.StudentService;
 import org.springframework.dao.DuplicateKeyException;
+import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -30,15 +28,18 @@ import javax.servlet.http.HttpSession;
  * @author O
  * @since 2020-02-17
  */
-@RestController
+@Controller
 @RequestMapping("/student")
 public class StudentController {
     @Resource
     private StudentService studentService;
     @Resource
-    LoginSession loginSession;
+    private LoginSession loginSession;
+    @Resource
+    private BedService bedService;
 
     @PostMapping("/register")
+    @ResponseBody
     CommonResult register(@Validated Student student, BindingResult br) {
         if (br.hasErrors() && br.getFieldError() != null) {
             return CommonResult.failure(br.getFieldError().getDefaultMessage());
@@ -60,6 +61,7 @@ public class StudentController {
     }
 
     @PostMapping("/login")
+    @ResponseBody
     CommonResult login(Student student, HttpServletRequest request) {
         final Long id = student.getId();
         final String pwd = student.getPassword();
@@ -70,18 +72,40 @@ public class StudentController {
         return CommonResult.expect(result.getSuccess()).setMessage(result.getMessage());
     }
 
-    @PostMapping("/logout")
-    CommonResult logout(Long id, HttpSession session) {
-        return CommonResult.expect(loginSession.logout(UserEnum.STUDENT, id, session));
+    @GetMapping("/logout")
+    @ResponseBody
+    CommonResult logout(Long id, HttpSession session, ModelAndView mv) {
+        loginSession.logout(UserEnum.STUDENT, id, session);
+        return CommonResult.success();
     }
 
     @PutMapping("/update")
+    @ResponseBody
     CommonResult update(@Validated Student student, BindingResult br) {
         if (br.hasErrors() && br.getFieldError() != null) {
             return CommonResult.failure(br.getFieldError().getDefaultMessage());
         }
         final boolean result = studentService.updateById(student);
         return CommonResult.expect(result);
+    }
+
+    @PostMapping("/chooseBed")
+    @ResponseBody
+    CommonResult chooseBed(Long id, Long bedId) {
+        final Student student = studentService.selectById(id);
+        final Long oldBedId = student.getBedId();
+        student.setBedId(bedId);
+        if (student.updateById()) {
+            final Bed oldBed = bedService.selectById(oldBedId);
+            final Bed newBed = bedService.selectById(bedId);
+            oldBed.setIsSelected(0);
+            oldBed.setIsMoveIn(0);
+            newBed.setIsSelected(1);
+            newBed.setIsMoveIn(0);
+            return CommonResult.success(newBed.updateById() && oldBed.updateById());
+        } else {
+            return CommonResult.failure("学生信息更新失败");
+        }
     }
 }
 

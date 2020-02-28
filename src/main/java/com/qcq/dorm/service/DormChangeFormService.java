@@ -1,7 +1,9 @@
 package com.qcq.dorm.service;
 
-import com.qcq.dorm.entity.DormChangeForm;
 import com.baomidou.mybatisplus.service.IService;
+import com.qcq.dorm.entity.DormChangeForm;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +14,7 @@ import com.baomidou.mybatisplus.service.IService;
  * @since 2020-02-17
  */
 public interface DormChangeFormService extends IService<DormChangeForm> {
+    Integer getDormChangeFormCount(Long stuId);
 
+    List<DormChangeForm> getDormChangeForms(Long buildingId);
 }

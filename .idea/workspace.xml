@@ -2,43 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7edffffb-3b97-4391-889b-09f959d13aec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_Eonasdan_bootstrap_datetimepicker_4_17_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_switch_3_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_font_awesome_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_momentjs_2_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/brand/bootstrap-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/studentIndex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/studentRegister.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/BedDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormChangeFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormSelectionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/FixFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/orionicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.sea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/style.violet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/orion-font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/orion-font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/orion-font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/orion-font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/fonts/orion-font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/avatar-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/illustration.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/template-mac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/charts-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/charts-home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/front.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/js.cookie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.rs-latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.rs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery-validation/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery-validation/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery-validation/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery.cookie/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery.cookie/cookie.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/jquery.cookie/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/esm/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/esm/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/umd/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/vendor/popper.js/umd/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/chooseDorm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/officerForms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/officerTables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/studentForms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/studentTables.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dorm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dorm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Husband.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Person.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BuildingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/FixFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/FixFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bird.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/mapper/BirdMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormChangeFormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormChangeFormService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/FixFormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/FixFormService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormChangeFormServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormChangeFormServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/FixFormServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/FixFormServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/ItemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asserts/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asserts/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asserts/js/jquery-3.2.1.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/jquery-3.2.1.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DormChangeFormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DormChangeFormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FixFormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FixFormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentRegister.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentRegister.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qcq/dorm/BirdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qcq/dorm/BirdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/Husband.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/bean/Person.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/BedController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/BedController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/BuildingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormChangeFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormChangeFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormOfficerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/DormOfficerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/FixFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/FixFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/RedirectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/RedirectController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Bird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Dorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Dorm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormChangeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/DormChangeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/FixForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/FixForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/asserts/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/asserts/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/asserts/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/asserts/js/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/asserts/js/jquery-3.2.1.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/asserts/js/jquery-3.2.1.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/mapper/BirdMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/BuildingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/DormChangeFormService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/DormChangeFormService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/DormService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/DormService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/FixFormService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/FixFormService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/BuildingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/BuildingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/DormChangeFormServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/DormChangeFormServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/DormServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/DormServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/FixFormServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/FixFormServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qcq/dorm/service/impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DormChangeFormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DormChangeFormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/FixFormMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/FixFormMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dormOfficerIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dormOfficerIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dormOfficerRegister.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dormOfficerRegister.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentRegister.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentRegister.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qcq/dorm/BirdTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qcq/dorm/BirdTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,82 +209,249 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="112">
+              <caret line="157" column="16" lean-forward="true" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1309#1502#0" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1549#1697#0" />
+                <element signature="e#1608#1645#0" />
+                <element signature="e#1657#1691#0" />
+                <element signature="e#1703#1843#0" />
+                <element signature="e#1754#1791#0" />
+                <element signature="e#1803#1837#0" />
+                <element signature="e#1873#1992#0" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/officerForms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+            <state relative-caret-position="61">
+              <caret line="359" column="5" lean-forward="true" selection-start-line="359" selection-start-column="5" selection-end-line="359" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bird.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="112">
+              <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/chooseDorm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="338">
+              <caret line="276" column="5" selection-start-line="276" selection-start-column="5" selection-end-line="276" selection-end-column="5" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/officerTables.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="354" selection-start-line="354" selection-end-line="366" selection-end-column="5" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1309#1502#0" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1549#1697#0" />
+                <element signature="e#1608#1645#0" />
+                <element signature="e#1657#1691#0" />
+                <element signature="e#1703#1843#0" />
+                <element signature="e#1754#1791#0" />
+                <element signature="e#1803#1837#0" />
+                <element signature="e#1873#1992#0" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentForms.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+              <folding>
+                <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1529#1677#0" />
+                <element signature="e#1588#1625#0" />
+                <element signature="e#1637#1671#0" />
+                <element signature="e#1683#1823#0" />
+                <element signature="e#1734#1771#0" />
+                <element signature="e#1783#1817#0" />
+                <element signature="e#1853#1972#0" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#input#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#option#0;n#select#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#option#1;n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#option#1;n#select#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#option#1;n#select#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#label#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentIndex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="189" selection-start-line="189" selection-end-line="201" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentRegister.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-665">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentTables.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,8 +459,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="348">
+              <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -156,33 +479,52 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spring_boot_demo</find>
-      <find>v</find>
-      <find>root</find>
-      <find>113.82.236.20</find>
-      <find>wecheck</find>
-      <find>we-check</find>
-      <find>lombok</find>
-      <find>com.qcq.core.redis.RedisCacheSupport</find>
-      <find>redistemplate.</find>
-      <find>bootst</find>
-      <find>bootstrap</find>
-      <find>rememberMe</find>
-      <find>tel</find>
-      <find>loginUserName</find>
-      <find>loginUserPasswd</find>
-      <find>warningText</find>
-      <find>btn btn-default</find>
-      <find>th:</find>
-      <find>th:each</find>
-      <find>loginPassword</find>
-      <find>loginId</find>
-      <find>已经</find>
-      <find>/register</find>
+      <find>/fixForm</find>
+      <find>none</find>
+      <find>fixForm</find>
+      <find>dormchangeform</find>
+      <find>dormchangeformdto</find>
+      <find>已同意</find>
+      <find>/studentTables</find>
+      <find>&lt;input type</find>
+      <find>开启活动</find>
+      <find>form-inline</find>
+      <find>/studenttables</find>
+      <find>th:inlin</find>
+      <find>return &quot;/</find>
+      <find>开始修为</find>
+      <find>officerForms</find>
+      <find>window.lo</find>
+      <find>th:href=&quot;@{/</find>
+      <find>th:replace</find>
+      <find>/officer</find>
+      <find>/officerTable</find>
+      <find>/officerTables</find>
+      <find>officerTables</find>
+      <find>footer.html</find>
+      <find>Footer</find>
+      <find>dormOfficerIndex</find>
+      <find>th:inline</find>
+      <find>/logout</find>
+      <find>th:href=&quot;@{student/logout(id=${student.id})}&quot;</find>
+      <find>alert('id</find>
+      <find>logout</find>
     </findStrings>
     <replaceStrings>
       <replace>dorm</replace>
       <replace>loginPassword</replace>
+      <replace>@{/studentForms(id=${student.id})}</replace>
+      <replace>th:href=&quot;@{/studentForms(id=${student.id})}&quot;</replace>
+      <replace>事务中心</replace>
+      <replace>asserts</replace>
+      <replace>@{/choseDorm(id=${student.id})}</replace>
+      <replace>&lt;a th:href=&quot;@{/choseDorm(id=${student.id})}&quot;</replace>
+      <replace>chooseDorm</replace>
+      <replace />
+      <replace>form</replace>
+      <replace>已拒绝</replace>
+      <replace>return &quot;</replace>
+      <replace>onclick=&quot;logout()&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -191,57 +533,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/MyContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/DormApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/RolePermission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/HelloService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/authc/Test.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/ShiroTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qcq/spring_boot_demo/BirdTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/responseStandar/ResponseMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/Response2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/util/MpGeneratorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/CustomizeThreadPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/CommonResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/schedule/LogSchedule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/UserEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/UserEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/LoginResultDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/OnlineSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BuildingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/asserts/css/signin.css" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentIndex.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/register.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentRegister.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DormMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BedService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tables.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sidebar.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/BedDetailsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DormChangeFormMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/forms.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FixFormMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormSelectionDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BuildingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/FixFormService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormChangeFormService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/BedDetailDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormChangeFormServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/FixFormServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/FixFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormChangeFormDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/FixFormDTO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qcq/dorm/BirdTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentRegister.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/emp/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentForms.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentTables.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/officerTables.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/officerForms.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentIndex.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/chooseDorm.html" />
       </list>
     </option>
   </component>
@@ -252,9 +594,24 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dorm" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dorm" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
-    <option name="y" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -266,6 +623,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,6 +700,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dorm" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,7 +759,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="asserts" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dorm" type="b2602c69:ProjectViewProjectNode" />
@@ -427,7 +794,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -441,7 +807,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/asserts/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -468,11 +834,11 @@
       <recent name="com.qcq.dorm.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\templates" />
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\static\asserts\js" />
       <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\static\asserts\css" />
-      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\static\asserts\brand" />
-      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\java\com\qcq\dorm\redis" />
-      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\java\com\qcq\dorm" />
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\templates" />
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\static\asserts\img" />
+      <recent name="C:\Users\oisci\IdeaProjects\dorm\src\main\resources\static\asserts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -539,26 +905,61 @@
       <workItem from="1581914659237" duration="3917000" />
       <workItem from="1581921291471" duration="443000" />
       <workItem from="1581921757393" duration="32691000" />
-      <workItem from="1582013046569" duration="37939000" />
+      <workItem from="1582013046569" duration="43128000" />
+      <workItem from="1582188340450" duration="38452000" />
+      <workItem from="1582368011908" duration="72456000" />
+      <workItem from="1582774668631" duration="37512000" />
+      <workItem from="1582872077671" duration="2842000" />
+      <workItem from="1582874967792" duration="3265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90956000" />
+    <option name="totallyTimeSpent" value="250672000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3489011" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.47802198" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4162088" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44917583" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33241758" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.41895604" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.3294271" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Redis Servers" order="3" weight="0.3294271" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25016287" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33012378" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36813188" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -578,7 +979,7 @@
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -586,11 +987,71 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java</url>
-          <line>48</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java</url>
+          <line>251</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/FixFormController.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -600,388 +1061,519 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/schedule/LogSchedule.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ResponseBody.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.5.RELEASE/spring-webmvc-5.0.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestResponseBodyMethodProcessor.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/BedDetailDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="306">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/Husband.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/LoginResultDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/CustomizeThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/enums/UserEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/BuildingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/BuildingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/AbstractCacheSupport.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0-sources.jar!/com/baomidou/mybatisplus/service/IService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="5185">
+          <caret line="325" column="12" selection-start-line="325" selection-start-column="12" selection-end-line="325" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheCounted.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="1496">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheLog.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/CacheSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/response/CommonResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.5.RELEASE/spring-webmvc-5.0.5.RELEASE-sources.jar!/org/springframework/web/servlet/ModelAndView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.6.RELEASE/spring-data-redis-2.0.6.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="775" column="33" selection-start-line="775" selection-start-column="33" selection-end-line="775" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.6.RELEASE/spring-data-redis-2.0.6.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/webjars/jquery/3.3.1-1/jquery-3.3.1-1.jar!/META-INF/resources/webjars/jquery/3.3.1-1/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/redis/RedisCacheSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="7820">
+          <caret line="508" column="17" selection-start-line="508" selection-start-column="17" selection-end-line="508" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/BuildingController.java">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_202/src.zip!/java/time/LocalDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="348">
+          <caret line="1864" column="20" selection-start-line="1864" selection-start-column="20" selection-end-line="1864" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/css/signin.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormSelectionDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/brand/bootstrap-solid.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index0.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/css/bootstrap-datetimepicker.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/css/bootstrap-datetimepicker.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/js/bootstrap-datetimepicker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/js/locales/bootstrap-datetimepicker.ar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#nav#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#li#2;n#ul#0;n#nav#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_202/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="489" column="32" selection-start-line="489" selection-start-column="32" selection-end-line="489" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/DormServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/DormService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/impl/FixFormServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/service/FixFormService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/DormChangeFormDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/dto/FixFormDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        <state relative-caret-position="2329">
+          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/FixFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="510">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormChangeFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/asserts/css/login.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/DormApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index0.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qcq/dorm/BirdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/mapper/BirdMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        <state relative-caret-position="193">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentIndex.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.1.RELEASE/spring-boot-2.0.1.RELEASE.jar!/org/springframework/boot/jta/bitronix/PoolingDataSourceBean.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="193" column="31" selection-start-line="193" selection-start-column="31" selection-end-line="193" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_202/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="796" column="13" selection-start-line="796" selection-start-column="13" selection-end-line="796" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/bean/LoginSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/DormOfficerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/officerForms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="359" column="5" lean-forward="true" selection-start-line="359" selection-start-column="5" selection-end-line="359" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dormOfficerIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/success.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/RedirectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="157" column="16" lean-forward="true" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1309#1502#0" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1549#1697#0" />
+            <element signature="e#1608#1645#0" />
+            <element signature="e#1657#1691#0" />
+            <element signature="e#1703#1843#0" />
+            <element signature="e#1754#1791#0" />
+            <element signature="e#1803#1837#0" />
+            <element signature="e#1873#1992#0" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dormOfficerRegister.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/officerTables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="23" />
+        <state relative-caret-position="129">
+          <caret line="354" selection-start-line="354" selection-end-line="366" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1309#1502#0" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1549#1697#0" />
+            <element signature="e#1608#1645#0" />
+            <element signature="e#1657#1691#0" />
+            <element signature="e#1703#1843#0" />
+            <element signature="e#1754#1791#0" />
+            <element signature="e#1803#1837#0" />
+            <element signature="e#1873#1992#0" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentForms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+          <folding>
+            <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1529#1677#0" />
+            <element signature="e#1588#1625#0" />
+            <element signature="e#1637#1671#0" />
+            <element signature="e#1683#1823#0" />
+            <element signature="e#1734#1771#0" />
+            <element signature="e#1783#1817#0" />
+            <element signature="e#1853#1972#0" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#option#0;n#select#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#option#1;n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#option#1;n#select#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#option#1;n#select#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#label#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentRegister.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        <state relative-caret-position="-665">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentTables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="32">
+          <caret line="189" selection-start-line="189" selection-end-line="201" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/chooseDorm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/FixForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormOfficer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/DormChangeForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Dorm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bird.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qcq/dorm/entity/Bed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <caret line="276" column="5" selection-start-line="276" selection-start-column="5" selection-end-line="276" selection-end-column="5" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,6 +14,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 /**
  * <p>
  * 更换宿舍工单
@@ -33,30 +36,23 @@ public class DormChangeForm extends Model<DormChangeForm> {
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
     @TableField("student_id")
+    @NotNull(message = "没有学生id")
     private Long studentId;
-    /**
-     * 原宿舍id
-     */
-    @TableField("old_dorm_id")
-    private Long oldDormId;
     /**
      * 原床号
      */
     @TableField("old_bed_id")
     private Long oldBedId;
     /**
-     * 新宿舍id
-     */
-    @TableField("new_dorm_id")
-    private Long newDormId;
-    /**
      * 新床号
      */
     @TableField("new_bed_id")
+    @NotNull(message = "没有选择新床位")
     private Long newBedId;
     /**
      * 原因
      */
+    @NotEmpty(message = "原因不能为空")
     private String reason;
     /**
      * 状态

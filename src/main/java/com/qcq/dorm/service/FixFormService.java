@@ -1,7 +1,9 @@
 package com.qcq.dorm.service;
 
-import com.qcq.dorm.entity.FixForm;
 import com.baomidou.mybatisplus.service.IService;
+import com.qcq.dorm.entity.FixForm;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +14,7 @@ import com.baomidou.mybatisplus.service.IService;
  * @since 2020-02-17
  */
 public interface FixFormService extends IService<FixForm> {
+    List<FixForm> getDormFixForms(Long dormId);
 
+    List<FixForm> getBuildingFixForms(Long buildingId);
 }

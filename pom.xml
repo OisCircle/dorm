@@ -89,6 +89,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+        <!--LocalDateTime支持-->
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-java8time</artifactId>
+            <version>3.0.1.RELEASE</version>
+        </dependency>
         <!-- mysql连接池 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -134,10 +140,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
         </plugins>
-
+        <finalName>dorm</finalName>
     </build>
-
-
 </project>

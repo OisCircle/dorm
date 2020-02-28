@@ -36,6 +36,10 @@ public class Student extends Model<Student> {
     @NotEmpty(message = "密码不能为空")
     private String password;
     /**
+     * name
+     */
+    private String name;
+    /**
      * 是否抽烟
      */
     @TableField("is_smoke")

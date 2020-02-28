@@ -1,0 +1,358 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="asserts/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="asserts/css/style.default.css" id="theme-stylesheet">
+    <link id="new-stylesheet" rel="stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="asserts/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="asserts/img/favicon.png?3">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style type="text/css">/* Chart.js */
+    @-webkit-keyframes chartjs-render-animation {
+        from {
+            opacity: 0.99
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes chartjs-render-animation {
+        from {
+            opacity: 0.99
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    .chartjs-render-monitor {
+        -webkit-animation: chartjs-render-animation 0.001s;
+        animation: chartjs-render-animation 0.001s;
+    }</style>
+</head>
+<body style="" class="">
+<!-- navbar-->
+<header th:replace="navbar.html"></header>
+<div class="d-flex align-items-stretch">
+    <div id="sidebar" class="sidebar py-3 shrink show">
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">学生</div>
+        <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="/studentIndex?id=1" class="sidebar-link text-muted"><i
+                    class="o-home-1 mr-3 text-gray"></i><span>概览</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{studentTables(id=${student.id})}"
+                                             class="sidebar-link text-muted"><i
+                    class="o-table-content-1 mr-3 text-gray"></i><span>宿舍详情</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{studentForms(id=${student.id})}"
+                                             class="sidebar-link text-muted active"><i
+                    class="o-survey-1 mr-3 text-gray"></i><span>事务中心</span></a></li>
+            <li class="sidebar-list-item"><a th:href="@{chooseDorm(id=${student.id})}" class="sidebar-link text-muted"><i
+                    class="o-wireframe-1 mr-3 text-gray"></i><span>宿舍选择</span></a></li>
+            <li class="sidebar-list-item"><a onclick="logout()"
+                                             class="sidebar-link text-muted"><i
+                    class="o-exit-1 mr-3 text-gray"></i><span>退出系统</span></a></li>
+        </ul>
+    </div>
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div class="container-fluid px-xl-5">
+            <section class="py-5">
+                <div class="row">
+                    <!-- Inline Form-->
+                    <div class="col-lg-8 mb-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="h6 text-uppercase mb-0">水电费充值</h3>
+                            </div>
+                            <div class="card-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="electricityRecharge" class="sr-only">充值金额</label>
+                                        <input id="electricityRecharge" type="text" placeholder="请输入充值金额"
+                                               class="mr-3 form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="electButton" type="reset" class="btn btn-green">电费充值</button>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <div class="form-group">
+                                        <label for="waterRecharge" class="sr-only">充值金额</label>
+                                        <input id="waterRecharge" type="text" placeholder="请输入充值金额"
+                                               class="mr-3 form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="waterButton" type="reset" class="btn btn-primary">水费充值</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Form-->
+                    <div class="col-lg-4 mb-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="h6 text-uppercase mb-0">物品维修</h3>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" data-toggle="modal" data-target="#myModal"
+                                        class="btn btn-primary">提交维修单
+                                </button>
+                                <!-- Modal-->
+                                <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                     class="modal fade text-left" aria-hidden="true" style="display: none;">
+                                    <div role="document" class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 id="exampleModalLabel" class="modal-title">物品维修单</h4>
+                                                <button type="button" data-dismiss="modal" aria-label="Close"
+                                                        class="close"><span aria-hidden="true">×</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 form-control-label">描述</label>
+                                                        <input id="desc" type="text" placeholder="请描述物品损坏程度"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 form-control-label">物品选择</label>
+                                                        <div class="col-md-9 select mb-3">
+                                                            <select name="items" class="form-control">
+                                                                <option th:each="item:${items}" th:text="${item.name}"
+                                                                        th:value="${item.id}" name="itemId"/>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <p id="fixFormWarningText"
+                                                   style="position:absolute; left:50%; transform:translateX(-50%); text-align:center;"></p>
+                                                <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">
+                                                    取消
+                                                </button>
+                                                <button id="fixFormCommit" type="button" class="btn btn-primary">提交
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Elements -->
+                    <div class="col-lg-12 mb-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="h6 text-uppercase mb-0">换宿申请</h3>
+                            </div>
+                            <div class="card-body">
+                                <form id="dormChangeForm" class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 form-control-label">原因</label>
+                                        <div class="col-md-9">
+                                            <input id="reason" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 form-control-label">楼栋选择</label>
+                                        <div class="col-md-9 select mb-3">
+                                            <select id="building" class="form-control">
+                                                <option selected="selected" value="-1">选择楼栋</option>
+                                                <option th:each="b:${buildings}" th:text="${b.name}"
+                                                        th:value="${b.id}"/>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 form-control-label">宿舍选择</label>
+                                        <div id="dormFragment" class="col-md-9 select mb-3" th:fragment="dormFragment">
+                                            <select id="dorm" class="form-control">
+                                                <option selected="selected" value="-1">选择宿舍</option>
+                                                <option th:each="d:${dorms}" th:text="${d.number}"
+                                                        th:value="${d.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 form-control-label">床位选择(仅展示可选床位)</label>
+                                        <div id="bedFragment" class="col-md-9 select mb-3" th:fragment="bedFragment">
+                                            <select id="bed" class="form-control">
+                                                <option selected="selected" value="-1">选择床位</option>
+                                                <option th:each="b:${beds}" th:text="${b.number}+'号床'"
+                                                        th:value="${b.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group row">
+                                        <label id="dormChangeFormWarningText"
+                                               class="col-md-3 form-control-label"
+                                               style="color: #dd0d0d;"
+                                        ></label>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group row">
+                                        <div class="col-md-9 ml-auto">
+                                            <button id="dormChangeSubmit" type="button" class="btn btn-primary">提交申请
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer th:replace="footer.html"></footer>
+    </div>
+</div>
+<!-- JavaScript files-->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="asserts/vendor/popper.js/umd/popper.min.js"></script>
+<script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
+<script src="https://lib.sinaapp.com/js/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="asserts/vendor/jquery.cookie/jquery.cookie.js"></script>
+<script src="https://cdn.bootcss.com/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="asserts/js/js.cookie.min.js"></script>
+<script src="asserts/js/front.js"></script>
+<script th:inline="javascript">
+    $('#fixFormCommit').click(function () {
+        var itemIds = document.getElementsByName("itemId");
+        let itemId;
+        for (i = 0; i < itemIds.length; i++) {
+            if (itemIds[i].selected) {
+                itemId = itemIds[i].value
+            }
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/fixForm/submit',
+            dataType: 'json',
+            data: {
+                'itemId': itemId,
+                'desc': $('#desc').val(),
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    $('#myModal').modal("hide");
+                    alert('提交成功！');
+                } else {
+                    $('#fixFormWarningText').text(result.message);
+                }
+            },
+            error: function () {
+
+            }
+        });
+    });
+    $('#dormChangeSubmit').click(function () {
+        // var bedIds = document.getElementsByName("bedId");
+        // let bedId;
+        // for (i = 0; i < bedIds.length; i++) {
+        //     if (bedIds[i].selected) {
+        //         bedId = bedIds[i].value
+        //     }
+        // }
+        let studentId = [[${student.id}]];
+        if ($("#bed option:selected").val() < 1) {
+            $('#dormChangeFormWarningText').text('请选择床位');
+            return;
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/dormChangeForm/submit',
+            dataType: 'json',
+            data: {
+                'studentId': studentId,
+                'reason': $('#reason').val(),
+                'newBedId': $("#bed option:selected").val()
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    alert('提交成功！');
+                    window.location.href = "studentForms?id=" + studentId;
+                } else {
+                    $('#dormChangeFormWarningText').text(result.message);
+                }
+            }
+            ,
+            error: function () {
+                alert('系统错误');
+            }
+        });
+    });
+    $('#building').change(function () {
+        var building = $("#building option:selected");
+        if (building.val() < 1) {
+            return;
+        }
+        var url = '/dormFragment?buildingId=' + building.val();
+        $('#dormFragment').load(url);
+    });
+    //以下这种监听方式在thymeleaf fragment组合下不生效
+    // $('#dorm').change(function () {
+    //     alert('in');
+    //     var dorm = $("#dorm option:selected");
+    //     alert(dorm.val());
+    //     if (dorm.val() < 1) {
+    //         return;
+    //     }
+    //     var url = '/bedFragment?dormId=' + dorm.val();
+    //     $('#bedFragment').load(url);
+    // });
+    $(document).on("change", "[id='dorm']", function () {
+        var dorm = $("#dorm option:selected");
+        if (dorm.val() < 1) {
+            return;
+        }
+        var url = '/bedFragment?dormId=' + dorm.val();
+        $('#bedFragment').load(url);
+    });
+    $('#electButton').click(function () {
+        alert('充值成功！');
+    });
+    $('#waterButton').click(function () {
+        alert('充值成功！');
+    });
+    function logout() {
+        $.ajax({
+            type: 'GET',
+            url: '/dormOfficer/logout',
+            dataType: 'json',
+            data: {
+                'id': [[${student.id}]]
+            },
+            success: function (result) {
+                window.location.href = "index";
+            }
+        });
+    }
+</script>
+</body>
+</html>

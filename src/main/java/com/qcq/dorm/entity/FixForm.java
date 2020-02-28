@@ -19,6 +19,9 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 /**
  * <p>
  * 维修工单
@@ -41,7 +44,13 @@ public class FixForm extends Model<FixForm> {
      * 物品id
      */
     @TableField("item_id")
+    @NotNull(message = "没有选择物品")
     private Long itemId;
+    /**
+     * 描述
+     */
+    @NotEmpty(message = "没有输入描述")
+    private String desc;
     /**
      * 提交时间
      */
@@ -65,10 +74,6 @@ public class FixForm extends Model<FixForm> {
      * 满意度(1-10)
      */
     private Integer satisfaction;
-    /**
-     * 评论
-     */
-    private String comment;
 
 
     @Override

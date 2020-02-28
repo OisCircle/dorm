@@ -9,20 +9,6 @@ server:
 #   context-path: /demo
 #开启debug模式，启动应用的时候可以查看很多信息
 #debug: true
-
-person:
-  name: 张三${random.uuid}
-  age: ${random.int(1,100)}
-  alive: true
-  birthDate: 2011/01/12
-  map: {k1: v1,k2: v2}
-  list:
-    - list1
-    - list2
-    - list3
-  dog:
-    name: 小狗狗
-    age: 2
 #默认级别是info，设置指定目录下面的日志级别
 logging:
   level:
@@ -43,16 +29,18 @@ mybatis-plus:
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.qcq.dorm.entity
 spring:
-#数据库连接配置
+  #数据库连接配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://39.108.162.211:3306/dorm?useSSL=false&amp;autoReconnect=true&amp;serverTimezone=GMT%2B8&amp;characterEncoding=UTF-8
     username: root
     password: qq793414670
-#国际化
-  messages:
-    basename: internationalization.login
-#开发的时候最好先关闭缓存，修改页面的时候，CTRL+F9重新编译页面，就不需要重启服务器了
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 30000
+      maximum-pool-size: 10
+      minimum-idle: 3
+  #开发的时候最好先关闭缓存，修改页面的时候，CTRL+F9重新编译页面，就不需要重启服务器了
   thymeleaf:
     cache: false
   #修改默认的日期格式，默认的是yyyy/MM/dd
@@ -62,3 +50,16 @@ spring:
     bitronix:
       datasource:
         enable-jdbc4-connection-test: true
+  #redis配置
+  redis:
+    database: 0
+    host: 39.108.162.211
+    port: 6379
+    password: qq793414670
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 3000ms

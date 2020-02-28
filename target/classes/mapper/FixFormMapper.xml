@@ -9,13 +9,13 @@
         <result column="submit_time" property="submitTime" />
         <result column="finish_time" property="finishTime" />
         <result column="state" property="state" />
+        <result column="desc" property="desc" />
         <result column="satisfaction" property="satisfaction" />
-        <result column="comment" property="comment" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, item_id AS itemId, submit_time AS submitTime, finish_time AS finishTime, state, satisfaction, comment
+        id, item_id AS itemId, submit_time AS submitTime, finish_time AS finishTime, state, satisfaction, desc
     </sql>
 
 </mapper>
