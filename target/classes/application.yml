@@ -28,6 +28,10 @@ mybatis-plus:
   mapper-locations: classpath:mapper/**/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.qcq.dorm.entity
+  global-config:
+    #驼峰下划线转换
+    #birdParent --> bird_parent
+    db-column-underline: true
 spring:
   #数据库连接配置
   datasource:

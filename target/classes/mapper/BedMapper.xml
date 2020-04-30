@@ -15,5 +15,7 @@
     <sql id="Base_Column_List">
         id, dorm_id AS dormId, number, is_selected AS isSelected, is_move_in AS isMoveIn
     </sql>
-
+    <select id="selectByIdForUpdate" resultMap="BaseResultMap">
+        select * from bed where id = #{id} for update;
+    </select>
 </mapper>

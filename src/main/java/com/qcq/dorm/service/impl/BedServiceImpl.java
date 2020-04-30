@@ -6,6 +6,8 @@ import com.qcq.dorm.service.BedService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * <p>
  * 床位 服务实现类
@@ -16,5 +18,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class BedServiceImpl extends ServiceImpl<BedMapper, Bed> implements BedService {
-
+    @Resource
+    BedMapper bedMapper;
+    @Override
+    public Bed selectByIdForUpdate(Long id) {
+        return bedMapper.selectByIdForUpdate(id);
+    }
 }

@@ -5,7 +5,6 @@ com\qcq\dorm\bean\CustomizeThreadPool.class
 com\qcq\dorm\enums\UserEnum.class
 com\qcq\dorm\config\MybatisPlusConfig.class
 com\qcq\dorm\service\impl\DormChangeFormServiceImpl.class
-com\qcq\dorm\entity\Bird.class
 com\qcq\dorm\service\impl\BedServiceImpl.class
 com\qcq\dorm\bean\LoginSession$LoginUser$LoginUserBuilder.class
 com\qcq\dorm\entity\Bed.class
@@ -27,24 +26,19 @@ com\qcq\dorm\schedule\LogSchedule.class
 com\qcq\dorm\mapper\DormChangeFormMapper.class
 com\qcq\dorm\dto\DormSelectionDTO.class
 com\qcq\dorm\controller\StudentController.class
-com\qcq\dorm\mapper\BirdMapper.class
 com\qcq\dorm\service\StudentService.class
 com\qcq\dorm\dto\BedDetailDTO.class
 com\qcq\dorm\mapper\DormMapper.class
-META-INF\spring-configuration-metadata.json
 com\qcq\dorm\mapper\FixFormMapper.class
 com\qcq\dorm\entity\Building.class
 com\qcq\dorm\service\HelloService.class
 com\qcq\dorm\bean\LoginSession$LoginUser.class
 com\qcq\dorm\DormApplication.class
-com\qcq\dorm\bean\Husband.class
 com\qcq\dorm\mapper\StudentMapper.class
 com\qcq\dorm\mapper\BedMapper.class
-com\qcq\dorm\bean\Cat.class
 com\qcq\dorm\dto\BedDetailDTO$BedDetailDTOBuilder.class
 com\qcq\dorm\dto\LoginResultDTO.class
 com\qcq\dorm\service\ItemService.class
-com\qcq\dorm\controller\HelloController.class
 com\qcq\dorm\service\DormChangeFormService.class
 com\qcq\dorm\util\MpGeneratorUtil$3.class
 com\qcq\dorm\util\MpGeneratorUtil.class
@@ -52,7 +46,6 @@ com\qcq\dorm\controller\DormOfficerController.class
 com\qcq\dorm\entity\Student.class
 com\qcq\dorm\controller\ItemController.class
 com\qcq\dorm\mapper\BuildingMapper.class
-com\qcq\dorm\bean\Person.class
 com\qcq\dorm\service\BuildingService.class
 com\qcq\dorm\util\MpGeneratorUtil$2.class
 com\qcq\dorm\dto\FixFormDTO.class
@@ -73,6 +66,5 @@ com\qcq\dorm\mapper\DormOfficerMapper.class
 com\qcq\dorm\service\impl\DormServiceImpl.class
 com\qcq\dorm\response\CommonResult.class
 com\qcq\dorm\service\impl\BuildingServiceImpl.class
-com\qcq\dorm\bean\Dog.class
 com\qcq\dorm\dto\DormChangeFormDTO.class
 com\qcq\dorm\mapper\ItemMapper.class

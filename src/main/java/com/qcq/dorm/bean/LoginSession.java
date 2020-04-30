@@ -65,10 +65,12 @@ public class LoginSession {
                 //重新刷新时间
                 loginUser.setExpireAt(LocalDateTime.now().plusMinutes(60));
             } else {
-                //异地登陆
-                result.setSuccess(false);
-                result.setMessage("用户已经在其它设备登陆，请先退出登陆");
-                return result;
+                //异地登陆且session过期，则可以登陆成功，否则登陆失败
+                if (LocalDateTime.now().isAfter(loginUser.getExpireAt())) {
+                    result.setSuccess(false);
+                    result.setMessage("用户已经在其它设备登陆，请先退出登陆");
+                    return result;
+                }
             }
         }
         session.setAttribute("expireAt", LocalDateTime.now().plusMinutes(60));

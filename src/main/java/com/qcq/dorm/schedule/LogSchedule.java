@@ -32,7 +32,7 @@ public class LogSchedule {
         log.info("current cache hit    count: {}", cacheCounted.hitCount());
         log.info("current cache missed count: {}", cacheCounted.missedCount());
         log.info("current cache hit rate: {}", cacheCounted.hitRate());
-        log.info("current cache hit rate: {}", cacheCounted.missedRate());
+        log.info("current cache miss rate: {}", cacheCounted.missedRate());
         log.info("***********************************");
     }
 }

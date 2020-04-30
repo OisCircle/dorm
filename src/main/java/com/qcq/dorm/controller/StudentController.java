@@ -11,6 +11,7 @@ import com.qcq.dorm.service.BedService;
 import com.qcq.dorm.service.StudentService;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -91,21 +92,8 @@ public class StudentController {
 
     @PostMapping("/chooseBed")
     @ResponseBody
-    CommonResult chooseBed(Long id, Long bedId) {
-        final Student student = studentService.selectById(id);
-        final Long oldBedId = student.getBedId();
-        student.setBedId(bedId);
-        if (student.updateById()) {
-            final Bed oldBed = bedService.selectById(oldBedId);
-            final Bed newBed = bedService.selectById(bedId);
-            oldBed.setIsSelected(0);
-            oldBed.setIsMoveIn(0);
-            newBed.setIsSelected(1);
-            newBed.setIsMoveIn(0);
-            return CommonResult.success(newBed.updateById() && oldBed.updateById());
-        } else {
-            return CommonResult.failure("学生信息更新失败");
-        }
+    public CommonResult chooseBed(Long id, Long bedId) {
+        return studentService.chooseBed(id, bedId);
     }
 }
 
